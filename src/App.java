@@ -7,8 +7,17 @@
 * Github: https://github.com/CWGSkyStone/
 */
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Fájlba írás");
+        try (Scanner scanner = new Scanner(System.in, "UTF-8")) {
+            System.out.println("Fájlba írás");
+            System.out.print("Írja be a szöveget: ");
+            String content = scanner.nextLine();
+
+            Writable writer = new Writer();
+            writer.writeContent(content);
+        }
     }
 }
