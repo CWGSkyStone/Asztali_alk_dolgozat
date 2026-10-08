@@ -1,0 +1,8 @@
+# Author: Szabó József
+# Group: Szoft II/N
+# Date: 2026-10-08
+
+/bin/
+*.class
+*.jar
+/szoveg.txt
